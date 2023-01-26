@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina zzz</title>
+</head>
+
+<body>
+    <div>
+        <input id="n1">
+        <input id="n2">
+    </div>
+    <button onclick="div()" id="div">Dividir</button>
+    <button onclick="mul()" id="mul">Mutiplicar</button>
+    <div id="result">resultado:</div>
+    <div></div>
+    <script>
+
+        function mul() {
+            n1 = document.getElementById("n1").value
+            n2 = document.getElementById("n2").value
+            r = n1 * n2
+            document.getElementById("result").textContent="resultado:" +r
+        }
+        function div() {
+            n1 = document.getElementById("n1").value
+            n2 = document.getElementById("n2").value
+            r = n1 / n2
+            document.getElementById("result").textContent="resultado:"+r
+        }
+
+
+    </script>
+</body>
+
+</html>
